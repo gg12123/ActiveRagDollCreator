@@ -1,0 +1,398 @@
+fileFormatVersion: 2
+guid: a86de3bf73a6b5d4bb4ef772b24fc875
+timeCreated: 1513850257
+licenseType: Free
+ModelImporter:
+  serializedVersion: 19
+  fileIDToRecycleName:
+    100000: Chest_Joint
+    100002: Foot_Joint_L
+    100004: Foot_Joint_R
+    100006: Hand_Joint_L
+    100008: Hand_Joint_R
+    100010: Head_Joint
+    100012: Hip_Joint
+    100014: LowerArm_Joint_L (2)
+    100016: LowerArm_Joint_R
+    100018: LowerLeg_Joint_L
+    100020: LowerLeg_Joint_R
+    100022: Neck_Joint
+    100024: Root_Joint
+    100026: Skeleton_Hip_Joint (6)
+    100028: Skeleton_Hip_Joint_L (4)
+    100030: Skeleton_Hip_Joint_L (7)
+    100032: Skeleton_Hip_Joint_R (4)
+    100034: Skeleton_Hip_Joint_R (8)
+    100036: Spine_Joint
+    100038: Texture Group
+    100040: UpperArm_Joint_L
+    100042: UpperArm_Joint_R
+    100044: UpperLeg_Joint_L (2)
+    100046: UpperLeg_Joint_R
+    100048: Worrior
+    100050: //RootNode
+    400000: Chest_Joint
+    400002: Foot_Joint_L
+    400004: Foot_Joint_R
+    400006: Hand_Joint_L
+    400008: Hand_Joint_R
+    400010: Head_Joint
+    400012: Hip_Joint
+    400014: LowerArm_Joint_L (2)
+    400016: LowerArm_Joint_R
+    400018: LowerLeg_Joint_L
+    400020: LowerLeg_Joint_R
+    400022: Neck_Joint
+    400024: Root_Joint
+    400026: Skeleton_Hip_Joint (6)
+    400028: Skeleton_Hip_Joint_L (4)
+    400030: Skeleton_Hip_Joint_L (7)
+    400032: Skeleton_Hip_Joint_R (4)
+    400034: Skeleton_Hip_Joint_R (8)
+    400036: Spine_Joint
+    400038: Texture Group
+    400040: UpperArm_Joint_L
+    400042: UpperArm_Joint_R
+    400044: UpperLeg_Joint_L (2)
+    400046: UpperLeg_Joint_R
+    400048: Worrior
+    400050: //RootNode
+    4300000: Worrior
+    9500000: //RootNode
+    13700000: Worrior
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 3
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human:
+    - boneName: Hip_Joint
+      humanName: Hips
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: UpperLeg_Joint_L (2)
+      humanName: LeftUpperLeg
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: UpperLeg_Joint_R
+      humanName: RightUpperLeg
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: LowerLeg_Joint_L
+      humanName: LeftLowerLeg
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: LowerLeg_Joint_R
+      humanName: RightLowerLeg
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Skeleton_Hip_Joint_L (7)
+      humanName: LeftFoot
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Foot_Joint_R
+      humanName: RightFoot
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Spine_Joint
+      humanName: Spine
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Chest_Joint
+      humanName: Chest
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Neck_Joint
+      humanName: Neck
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Head_Joint
+      humanName: Head
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: UpperArm_Joint_L
+      humanName: LeftUpperArm
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: UpperArm_Joint_R
+      humanName: RightUpperArm
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: LowerArm_Joint_L (2)
+      humanName: LeftLowerArm
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: LowerArm_Joint_R
+      humanName: RightLowerArm
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Hand_Joint_L
+      humanName: LeftHand
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Hand_Joint_R
+      humanName: RightHand
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    skeleton:
+    - name: Worrior_Model(Clone)
+      parentName: 
+      position: {x: 0, y: 0, z: 0}
+      rotation: {x: 0, y: 0, z: 0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Texture Group
+      parentName: Worrior_Model(Clone)
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Worrior
+      parentName: Worrior_Model(Clone)
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Root_Joint
+      parentName: Worrior_Model(Clone)
+      position: {x: -0, y: 0, z: -0.026}
+      rotation: {x: 1.0286511e-15, y: 0.7071068, z: 0.70710677, w: 3.4542035e-15}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Hip_Joint
+      parentName: Root_Joint
+      position: {x: -2.9582284e-31, y: 0, z: 0.556}
+      rotation: {x: -0.0000000057278946, y: 0.07586826, z: 0.9971179, w: 0.000000075280305}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Spine_Joint
+      parentName: Hip_Joint
+      position: {x: -1.3877788e-17, y: -2.7755576e-17, z: 0.09914131}
+      rotation: {x: -0.00892951, y: -8.412598e-16, z: -1.4439391e-15, w: 0.9999601}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Chest_Joint
+      parentName: Spine_Joint
+      position: {x: -3.3087225e-24, y: -1.3877788e-17, z: 0.08980534}
+      rotation: {x: -0.000000014907517, y: 0.19745605, z: 0.98031175, w: 0.000000074011474}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Neck_Joint
+      parentName: Chest_Joint
+      position: {x: -3.3087225e-24, y: 1.9428903e-16, z: 0.14666219}
+      rotation: {x: -0.16172485, y: 1.7712654e-15, z: 6.462461e-15, w: 0.9868359}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Head_Joint
+      parentName: Neck_Joint
+      position: {x: -5.551115e-17, y: -2.7755576e-16, z: 0.035867535}
+      rotation: {x: 0.030682953, y: 0.001133539, z: 0.00014308022, w: 0.9995285}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Skeleton_Hip_Joint (6)
+      parentName: Head_Joint
+      position: {x: 1.6913554e-17, y: 1.2490009e-16, z: 0.43960112}
+      rotation: {x: 0.057521496, y: 0.7047633, z: 0.7046306, w: 0.05912453}
+      scale: {x: 1, y: 1, z: 1}
+    - name: UpperArm_Joint_L
+      parentName: Chest_Joint
+      position: {x: 0.093, y: -0.009157779, z: 0.14074315}
+      rotation: {x: 0.43328202, y: 0.5855838, z: 0.4184376, w: 0.542465}
+      scale: {x: 1, y: 1, z: 1}
+    - name: LowerArm_Joint_L (2)
+      parentName: UpperArm_Joint_L
+      position: {x: -0.008, y: 0.0006752907, z: 0.2095365}
+      rotation: {x: -0.019081002, y: 7.718004e-17, z: -8.0968806e-17, w: 0.99981797}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Hand_Joint_L
+      parentName: LowerArm_Joint_L (2)
+      position: {x: 0.005, y: 0.00032332886, z: 0.1381668}
+      rotation: {x: -0.013033113, y: 4.2884278e-16, z: -3.6831039e-16, w: 0.99991506}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Skeleton_Hip_Joint_L (4)
+      parentName: Hand_Joint_L
+      position: {x: 0.003, y: -0.00012531139, z: 0.065281115}
+      rotation: {x: 0.59201616, y: 0.6722962, z: 0.21912964, w: -0.38667414}
+      scale: {x: 1, y: 1, z: 1}
+    - name: UpperArm_Joint_R
+      parentName: Chest_Joint
+      position: {x: -0.093, y: -0.009157779, z: 0.14074315}
+      rotation: {x: 0.58558387, y: 0.4332821, z: -0.54246503, w: -0.41843742}
+      scale: {x: 1, y: 1, z: 1}
+    - name: LowerArm_Joint_R
+      parentName: UpperArm_Joint_R
+      position: {x: -0.008, y: -0.0006752907, z: 0.2095365}
+      rotation: {x: 0.019081002, y: 9.013948e-17, z: 7.427139e-17, w: 0.99981797}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Hand_Joint_R
+      parentName: LowerArm_Joint_R
+      position: {x: 0.005, y: -0.00032332886, z: 0.1381668}
+      rotation: {x: 0.013028649, y: -0.00034116718, z: -0.026174726, w: 0.99957246}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Skeleton_Hip_Joint_R (4)
+      parentName: Hand_Joint_R
+      position: {x: 0.003, y: 0.00012531139, z: 0.065281115}
+      rotation: {x: 0.6722962, y: 0.59201616, z: -0.38667414, w: 0.21912964}
+      scale: {x: 1, y: 1, z: 1}
+    - name: UpperLeg_Joint_L (2)
+      parentName: Hip_Joint
+      position: {x: -0.085, y: -0.0025720862, z: -0.016804297}
+      rotation: {x: 0.9922456, y: 0.000000084296296, z: -0.000000084296296, w: 0.12429274}
+      scale: {x: 1, y: 1, z: 1}
+    - name: LowerLeg_Joint_L
+      parentName: UpperLeg_Joint_L (2)
+      position: {x: 6.938894e-17, y: -0.007697756, z: 0.28459927}
+      rotation: {x: -0.000000011714372, y: -0.15516156, z: 0.9878891, w: -0.000000074583554}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Skeleton_Hip_Joint_L (7)
+      parentName: LowerLeg_Joint_L
+      position: {x: 1.3877788e-17, y: 0.0020442249, z: 0.21638118}
+      rotation: {x: 0.00000004963624, y: -0.65745187, z: 0.7534965, w: 0.000000056887405}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Foot_Joint_L
+      parentName: Skeleton_Hip_Joint_L (7)
+      position: {x: 1.2490009e-16, y: 6.2450045e-17, z: 0.12242957}
+      rotation: {x: -0.77362376, y: -0.000000010568086, z: 0.000000010568086, w: 0.63364524}
+      scale: {x: 1, y: 1, z: 1}
+    - name: UpperLeg_Joint_R
+      parentName: Hip_Joint
+      position: {x: 0.085, y: -0.0025720862, z: -0.016804297}
+      rotation: {x: 0.9922456, y: 0.000000084296296, z: -0.000000084296296, w: 0.12429274}
+      scale: {x: 1, y: 1, z: 1}
+    - name: LowerLeg_Joint_R
+      parentName: UpperLeg_Joint_R
+      position: {x: -9.7144515e-17, y: -0.007697756, z: 0.28459927}
+      rotation: {x: -0.000000011714371, y: -0.15516156, z: 0.9878891, w: -0.000000074583554}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Foot_Joint_R
+      parentName: LowerLeg_Joint_R
+      position: {x: 2.220446e-16, y: 0.0020442249, z: 0.21638118}
+      rotation: {x: 0.00000004963624, y: -0.65745187, z: 0.7534965, w: 0.00000005688741}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Skeleton_Hip_Joint_R (8)
+      parentName: Foot_Joint_R
+      position: {x: 8.326673e-17, y: 6.938894e-17, z: 0.12242957}
+      rotation: {x: -0.77362376, y: -0.000000010568086, z: 0.000000010568086, w: 0.63364524}
+      scale: {x: 1, y: 1, z: 1}
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+    hasTranslationDoF: 0
+    hasExtraRoot: 1
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 3
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
