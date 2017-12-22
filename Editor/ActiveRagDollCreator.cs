@@ -17,7 +17,7 @@ public class ActiveRagDollCreator : EditorWindow
    private Dictionary<Transform, Transform> m_TargetToRagDoll;
 
    // #########################
-   [MenuItem("Active rag dolls/Creator")]
+   [MenuItem("ActiveRagDolls/Creator")]
    public static void OpenWindow()
    {
       ActiveRagDollCreator window = GetWindow(typeof(ActiveRagDollCreator)) as ActiveRagDollCreator;
