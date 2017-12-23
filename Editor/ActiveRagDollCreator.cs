@@ -21,6 +21,7 @@ public class ActiveRagDollCreator : EditorWindow
    public static void OpenWindow()
    {
       ActiveRagDollCreator window = GetWindow(typeof(ActiveRagDollCreator)) as ActiveRagDollCreator;
+      window.minSize = new Vector2(320.0f, 350.0f);
       window.Show();
    }
 
@@ -202,6 +203,12 @@ public class ActiveRagDollCreator : EditorWindow
    {
       bool ok = true;
 
+      if (!CheckJoints(m_RiggedHumanoid.transform, m_RiggedHumanoidHierachy.Hips))
+      {
+         Debug.LogError("Hips must be a child of the root game objects tranform.");
+         ok = false;
+      }
+
       if (!CheckJoints(m_RiggedHumanoidHierachy.Hips, m_RiggedHumanoidHierachy.Spine))
       {
          Debug.LogError("Spine must be a child of Hips");
@@ -232,14 +239,23 @@ public class ActiveRagDollCreator : EditorWindow
    // ######################
    private void Clean()
    {
-      Rigidbody[] bodies = m_RiggedHumanoid.GetComponentsInChildren<Rigidbody>();
+      DestroyArrayOfObjects(m_RiggedHumanoid.GetComponentsInChildren<Rigidbody>());
+      DestroyArrayOfObjects(m_RiggedHumanoid.GetComponentsInChildren<Collider>());
+      DestroyArrayOfObjects(m_RiggedHumanoid.GetComponentsInChildren<Joint>());
+   }
 
-
+   // #######################
+   private void DestroyArrayOfObjects(Object[] objs)
+   {
+      for (int i = 0; i < objs.Length; i++)
+         DestroyImmediate(objs[i]);
    }
 
    // ########################
    void OnGUI()
    {
+      EditorGUILayout.HelpBox("Turn the specified game object into an active rag doll.", MessageType.Info);
+
       m_RiggedHumanoid = EditorGUILayout.ObjectField("Root game object", m_RiggedHumanoid, typeof(GameObject), true) as GameObject;
 
       SerializedObject s = new SerializedObject(this);
