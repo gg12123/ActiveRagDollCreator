@@ -3,15 +3,15 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEditor;
 
-[CustomEditor(typeof(MassTuner))]
-public class MassTunerEditor : Editor
+[CustomEditor(typeof(ParamsTuner), true)]
+public class ParamsTunerEditor : Editor
 {
-   private MassTuner m_Target;
+   private ParamsTuner m_Target;
 
    // #######################
    void OnEnable()
    {
-      m_Target = target as MassTuner;
+      m_Target = target as ParamsTuner;
    }
 
    // #######################

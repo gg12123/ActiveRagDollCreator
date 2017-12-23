@@ -167,15 +167,80 @@ public class ActiveRagDollCreator : EditorWindow
       foreach (SkinnedMeshRenderer smr in m_RiggedHumanoidsMeshs)
          smr.sharedMesh = null;
 
-      activeRagdoll.AddComponent<MassTuner>();
+      activeRagdoll.AddComponent<MassTuner>().SerializeDefaults(5.0f, 5.0f, 1.0f, 1.0f, 1.0f, 1.0f, 1.0f);
+      activeRagdoll.AddComponent<SpringForceTuner>().SerializeDefaults(1000.0f, 1000.0f, 1000.0f, 1000.0f, 1000.0f, 1000.0f, 1000.0f);
+      activeRagdoll.AddComponent<DamperTuner>().SerializeDefaults(0.0f, 0.0f, 0.0f, 0.0f, 0.0f, 0.0f, 0.0f);
+
+      activeRagdoll.AddComponent<ActiveRagDollHierarchy>().SerializeBodies(m_TargetToRagDoll, m_RiggedHumanoidHierachy);
+
       activeRagdoll.AddComponent<DeathHandler>();
-      activeRagdoll.AddComponent<RigidbodyHierarchy>().SerializeBodies(m_TargetToRagDoll, m_RiggedHumanoidHierachy);
+   }
+
+   // #######################
+   private bool CheckJoints(Transform parent, Transform child)
+   {
+      bool ok = false;
+
+      if ((child != null) && (parent != null))
+      {
+         Transform t = child.parent;
+
+         while ((t != parent) && (t != null))
+         {
+            t = t.parent;
+         }
+
+         if (t == parent)
+            ok = true;
+      }
+
+      return ok;
+   }
+
+   // #######################
+   private bool ValidateSpecifiedHierarchy()
+   {
+      bool ok = true;
+
+      if (!CheckJoints(m_RiggedHumanoidHierachy.Hips, m_RiggedHumanoidHierachy.Spine))
+      {
+         Debug.LogError("Spine must be a child of Hips");
+         ok = false;
+      }
+
+      if (!CheckJoints(m_RiggedHumanoidHierachy.Hips, m_RiggedHumanoidHierachy.UpperLeg1))
+      {
+         Debug.LogError("Legs must be a child of Hips");
+         ok = false;
+      }
+
+      if (!CheckJoints(m_RiggedHumanoidHierachy.Spine, m_RiggedHumanoidHierachy.UpperArm1))
+      {
+         Debug.LogError("Arms must be a child of Spine");
+         ok = false;
+      }
+
+      if (!CheckJoints(m_RiggedHumanoidHierachy.Spine, m_RiggedHumanoidHierachy.Head))
+      {
+         Debug.LogError("Head must be a child of Spine");
+         ok = false;
+      }
+
+      return ok;
+   }
+
+   // ######################
+   private void Clean()
+   {
+      Rigidbody[] bodies = m_RiggedHumanoid.GetComponentsInChildren<Rigidbody>();
+
+
    }
 
    // ########################
    void OnGUI()
    {
-      m_RiggedHumanoid = EditorGUILayout.ObjectField("Rigged humanoid root game object", m_RiggedHumanoid, typeof(GameObject), true) as GameObject;
+      m_RiggedHumanoid = EditorGUILayout.ObjectField("Root game object", m_RiggedHumanoid, typeof(GameObject), true) as GameObject;
 
       SerializedObject s = new SerializedObject(this);
       EditorGUILayout.PropertyField(s.FindProperty("m_RiggedHumanoidHierachy"), true);
@@ -183,7 +248,12 @@ public class ActiveRagDollCreator : EditorWindow
 
       if (GUILayout.Button("Create"))
       {
-         Create();
+         if (ValidateSpecifiedHierarchy())
+         {
+            Clean();
+            Create();
+            Close();
+         }
       }
    }
 }

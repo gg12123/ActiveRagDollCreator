@@ -11,7 +11,7 @@ public class DeathHandler : MonoBehaviour
    // Use this for initialization
    void Start ()
    {
-      m_Hips = GetComponent<RigidbodyHierarchy>().Hips.GetComponent<ConfigurableJoint>();
+      m_Hips = GetComponent<ActiveRagDollHierarchy>().Hips.Joint;
       m_Joints = GetComponentsInChildren<ConfigurableJoint>();
       m_JointControllers = GetComponentsInChildren<JointControl>();
 
