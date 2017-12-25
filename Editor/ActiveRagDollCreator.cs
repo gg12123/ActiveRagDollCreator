@@ -164,6 +164,7 @@ public class ActiveRagDollCreator : EditorWindow
       m_RiggedHumanoid.name = "AnimatedHierarchy";
 
       activeRagdoll.GetComponentInChildren<Animator>().enabled = false;
+      m_RiggedHumanoid.GetComponentInChildren<Animator>().updateMode = AnimatorUpdateMode.AnimatePhysics;
 
       foreach (SkinnedMeshRenderer smr in m_RiggedHumanoidsMeshs)
          smr.sharedMesh = null;

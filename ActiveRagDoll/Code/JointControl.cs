@@ -24,7 +24,7 @@ public class JointControl : MonoBehaviour
    }
    
    // Update is called once per frame
-   void Update ()
+   void FixedUpdate ()
    {
       // deltaQ must be inverted. I think this is becasue joint space is the inverse of a normal transforms space.
       Quaternion deltaQ = Quaternion.Inverse(m_Target.localRotation) * m_q0;
